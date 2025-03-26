@@ -1,0 +1,114 @@
+[
+    {
+        "id": "0001",
+        "tipo": "taco",
+        "nombre": "Taco lechon",
+        "precio": 20.00,
+        "ingredientes": {
+            "proteina": {
+                "nombre": "Puerco",
+                "preparacion": "Horneado"
+            },
+            "salsa": {
+                "nombre": "Tomate verde",
+                "pico": "Medio"
+            },
+            "acompanamientos": [
+                {
+                    "nombre": "Cebolla",
+                    "cantidad": "1 cucharada",
+                    "ingredientes": ["Cebolla blanca", "Cilantro", "Naranja", "Sal"]
+                },
+                {
+                    "nombre": "Guacamole",
+                    "cantidad": "2 cucharadas",
+                    "ingredientes": ["Aguacate", "Jugo de limon", "Sal", "Cebolla", "Cilantro"]
+                }
+            ]
+        }
+    },
+    {
+        "id": "0002",
+        "tipo": "taco",
+        "nombre": "Taco Camaron",
+        "precio": 25.00,
+        "ingredientes": {
+            "proteina": {
+                "nombre": "Camaron",
+                "preparacion": "Frito"
+            },
+            "salsa": {
+                "nombre": "Tomate",
+                "pico": "Medio"
+            },
+            "acompanamientos": [
+                {
+                    "nombre": "Cebolla",
+                    "cantidad": "1 cucharada",
+                    "ingredientes": ["Cebolla blanca", "Cilantro"]
+                },
+                {
+                    "nombre": "Mexicana",
+                    "cantidad": "2 cucharadas",
+                    "ingredientes": ["Tomate", "Jugo de limon", "Sal", "Cebolla", "Cilantro"]
+                }
+            ]
+        }
+    },
+    {
+        "id": "0003",
+        "tipo": "taco",
+        "nombre": "Taco de birria",
+        "precio": 20.00,
+        "ingredientes": {
+            "proteina": {
+                "nombre": "Carnero",
+                "preparacion": "Hervido"
+            },
+            "salsa": {
+                "nombre": "Guacamole",
+                "pico": "Medio"
+            },
+            "acompanamientos": [
+                {
+                    "nombre": "Cebolla",
+                    "cantidad": "1 cucharada",
+                    "ingredientes": ["Cebolla blanca", "Cilantro"]
+                },
+                {
+                    "nombre": "Guacamole",
+                    "cantidad": "2 cucharadas",
+                    "ingredientes": ["Aguacate", "Jugo de limon", "Sal", "Cebolla", "Cilantro"]
+                }
+            ]
+        }
+    },
+    {
+        "id": "0004",
+        "tipo": "taco",
+        "nombre": "Taco de lengua",
+        "precio": 20.00,
+        "ingredientes": {
+            "proteina": {
+                "nombre": "Res",
+                "preparacion": "Hervido"
+            },
+            "salsa": {
+                "nombre": "Guacamole",
+                "pico": "Medio"
+            },
+            "acompanamientos": [
+                {
+                    "nombre": "Cebolla",
+                    "cantidad": "1 cucharada",
+                    "ingredientes": ["Cebolla blanca", "Cilantro"]
+                },
+                {
+                    "nombre": "Salsa roja",
+                    "cantidad": "2 cucharadas",
+                    "ingredientes": ["Tomate", "Guajillo", "Sal", "Cebolla", "Cilantro"]
+                }
+            ]
+        }
+    }
+]
