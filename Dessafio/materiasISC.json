@@ -1,0 +1,77 @@
+{
+    "Temas": [
+      {
+        "ID": 1,
+        "Nombre": "Bases de Datos",
+        "Descripción": "Estudio de los sistemas de gestión de bases de datos y su aplicación.",
+        "Palabras_claves": ["SQL", "NoSQL", "Modelado de datos", "Optimización"],
+        "Prácticas": [
+          {
+            "Título": "Creación de base de datos",
+            "Descripción": "Diseñar y crear una base de datos en MySQL.",
+            "Objetivo": "Comprender la estructura y diseño de bases de datos relacionales."
+          },
+          {
+            "Título": "Consultas SQL avanzadas",
+            "Descripción": "Ejecutar consultas avanzadas en SQL con JOINS y subconsultas.",
+            "Objetivo": "Manejar consultas complejas en bases de datos."
+          }
+        ]
+      },
+      {
+        "ID": 2,
+        "Nombre": "Inteligencia Artificial",
+        "Descripción": "Introducción a los conceptos y aplicaciones de IA.",
+        "Palabras_claves": ["Machine Learning", "Redes Neuronales", "Algoritmos genéticos"],
+        "Prácticas": [
+          {
+            "Título": "Clasificación con Machine Learning",
+            "Descripción": "Implementar un modelo de clasificación con Python y Scikit-Learn.",
+            "Objetivo": "Aplicar técnicas básicas de aprendizaje automático."
+          },
+          {
+            "Título": "Red neuronal simple",
+            "Descripción": "Construir una red neuronal con TensorFlow.",
+            "Objetivo": "Comprender la estructura de una red neuronal artificial."
+          }
+        ]
+      },
+      {
+        "ID": 3,
+        "Nombre": "Programación Web",
+        "Descripción": "Desarrollo de aplicaciones web con tecnologías modernas.",
+        "Palabras_claves": ["HTML", "CSS", "JavaScript", "React", "Node.js"],
+        "Prácticas": [
+          {
+            "Título": "Desarrollo de una API REST",
+            "Descripción": "Crear una API REST con Express y Node.js.",
+            "Objetivo": "Manejar peticiones y respuestas en aplicaciones web."
+          },
+          {
+            "Título": "Diseño responsivo con CSS",
+            "Descripción": "Aplicar técnicas de CSS para mejorar la experiencia en distintos dispositivos.",
+            "Objetivo": "Garantizar el diseño adaptable en una web."
+          }
+        ]
+      },
+      {
+        "ID": 4,
+        "Nombre": "Redes",
+        "Descripción": "Fundamentos de redes de computadoras y su configuración.",
+        "Palabras_claves": ["TCP/IP", "Ruteo", "Subnetting", "Protocolos"],
+        "Prácticas": [
+          {
+            "Título": "Configuración de red en Cisco Packet Tracer",
+            "Descripción": "Configurar una red básica con routers y switches en Packet Tracer.",
+            "Objetivo": "Entender los principios de enrutamiento y direccionamiento."
+          },
+          {
+            "Título": "Simulación de tráfico en Wireshark",
+            "Descripción": "Analizar paquetes de red con Wireshark.",
+            "Objetivo": "Estudiar el comportamiento del tráfico de red y los protocolos involucrados."
+          }
+        ]
+      }
+    ]
+  }
+  

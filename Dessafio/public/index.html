@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materias de Ingeniería en Sistemas</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>Materias de Ingeniería en Sistemas</h1>
+
+    <form id="Form" class="buttons">
+        <button type="button" data-type="Bases de Datos">📚 Bases de Datos</button>
+        <button type="button" data-type="Inteligencia Artificial">🤖 Inteligencia Artificial</button>
+        <button type="button" data-type="Programación Web">🌐 Programación Web</button>
+        <button type="button" data-type="Redes">🔌 Redes</button>
+    </form>
+
+    <div id="materiaInfo">
+        <h2>Detalles de la Materia</h2>
+        <p id="descripcionMateria"></p>
+        <div id="practicasMateria"></div>
+    </div>
+
+    <script>
+        // Definimos la constante materias con la información
+        const materias = {
+            "Bases de Datos": {
+                descripcion: "Estudio de los sistemas de gestión de bases de datos y su aplicación.",
+                practicas: [
+                    {
+                        titulo: "Creación de base de datos",
+                        descripcion: "Diseñar y crear una base de datos en MySQL.",
+                        objetivo: "Comprender la estructura y diseño de bases de datos relacionales."
+                    },
+                    {
+                        titulo: "Consultas SQL avanzadas",
+                        descripcion: "Ejecutar consultas avanzadas en SQL con JOINS y subconsultas.",
+                        objetivo: "Manejar consultas complejas en bases de datos."
+                    }
+                ]
+            },
+            "Inteligencia Artificial": {
+                descripcion: "Introducción a los conceptos y aplicaciones de IA.",
+                practicas: [
+                    {
+                        titulo: "Clasificación con Machine Learning",
+                        descripcion: "Implementar un modelo de clasificación con Python y Scikit-Learn.",
+                        objetivo: "Aplicar técnicas básicas de aprendizaje automático."
+                    },
+                    {
+                        titulo: "Red neuronal simple",
+                        descripcion: "Construir una red neuronal con TensorFlow.",
+                        objetivo: "Comprender la estructura de una red neuronal artificial."
+                    }
+                ]
+            },
+            "Programación Web": {
+                descripcion: "Desarrollo de aplicaciones web con tecnologías modernas.",
+                practicas: [
+                    {
+                        titulo: "Desarrollo de una API REST",
+                        descripcion: "Crear una API REST con Express y Node.js.",
+                        objetivo: "Manejar peticiones y respuestas en aplicaciones web."
+                    },
+                    {
+                        titulo: "Diseño responsivo con CSS",
+                        descripcion: "Aplicar técnicas de CSS para mejorar la experiencia en distintos dispositivos.",
+                        objetivo: "Garantizar el diseño adaptable en una web."
+                    }
+                ]
+            },
+            "Redes": {
+                descripcion: "Fundamentos de redes de computadoras y su configuración.",
+                practicas: [
+                    {
+                        titulo: "Configuración de red en Cisco Packet Tracer",
+                        descripcion: "Configurar una red básica con routers y switches en Packet Tracer.",
+                        objetivo: "Entender los principios de enrutamiento y direccionamiento."
+                    },
+                    {
+                        titulo: "Simulación de tráfico en Wireshark",
+                        descripcion: "Analizar paquetes de red con Wireshark.",
+                        objetivo: "Estudiar el comportamiento del tráfico de red y los protocolos involucrados."
+                    }
+                ]
+            }
+        };
+
+        // Función para mostrar la información de la materia
+        function mostrarInformacion(materia) {
+            const descripcion = materias[materia].descripcion;
+            const practicas = materias[materia].practicas;
+
+            // Mostrar descripción
+            document.getElementById("descripcionMateria").innerText = descripcion;
+
+            // Mostrar prácticas
+            let practicasHTML = "<h3>Prácticas:</h3><ul>";
+            practicas.forEach(practica => {
+                practicasHTML += `<li><strong>${practica.titulo}</strong>: ${practica.descripcion} <em>(Objetivo: ${practica.objetivo})</em></li>`;
+            });
+            practicasHTML += "</ul>";
+            document.getElementById("practicasMateria").innerHTML = practicasHTML;
+        }
+
+        // Asignar evento a cada botón
+        const botones = document.querySelectorAll("button[data-type]");
+        botones.forEach(boton => {
+            boton.addEventListener("click", function() {
+                const materia = boton.getAttribute("data-type");
+                mostrarInformacion(materia);
+            });
+        });
+    </script>
+</body>
+</html>
